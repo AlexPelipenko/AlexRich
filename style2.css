@@ -1,0 +1,38 @@
+ol {
+    list-style-type:decimal;
+}
+ul {
+    list-style-type:circle; 
+}
+.padding {
+
+    background-color: brown;
+    padding: 10px;
+}
+ol.element { list-style-type: none;
+counter-reset:number;}
+
+ol.element li::before {
+    content: counter(number) '-$-';
+    counter-increment: number;
+}
+blockquote::before {
+    content: "«";
+}
+blockquote::after {
+    content: "»";
+}
+
+ul.element2 {list-style-type: none;
+font-style: italic;}
+
+ul.element2 li::after {
+    content: '-';
+    color: #b50404;
+}
+img {
+    border: 2px rgb(243, 247, 5) solid;
+    height: 30%;
+    width: 30%;
+}
+
